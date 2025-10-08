@@ -95,7 +95,7 @@ function [y]=SLWSE(X ,Y, d ,numanchor, lambda)
             term1 = term1 +  termobj{v};
         end
 
-        obj(iter)=term1 -  lambda * (trace(Q * Z * Z' * Q'))^(0.5);
+        obj(iter) = term1 -  lambda * (trace(Q * Z * Z' * Q'))^(0.5);
 
         if((iter >1 && abs(obj(iter) - obj(iter -1)) / obj(iter -1) < 0.0001)|| iter == maxIter)
             flag = 0 ;

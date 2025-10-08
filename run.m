@@ -3,15 +3,15 @@ clear;
 warning off;
 addpath(genpath('./'));
 
-DBDIR = 'H:/data/';
-%DBDIR = 'dataset/';
+%DBDIR = 'H:/data/';
+DBDIR = 'dataset/';
 %% dataset
 
 i= 1;
 
 % DataName{i} = 'Wiki'; i = i + 1;
-DataName{i} = 'COIL20'; i = i + 1;
-% DataName{i} = 'Caltech101-20'; i = i + 1;
+% DataName{i} = 'COIL20'; i = i + 1;
+DataName{i} = 'Caltech101-20'; i = i + 1;
 % DataName{i} = 'NUSWIDEOBJ'; i = i + 1;
 % DataName{i} = 'YouTubeFace10_4Views'; i = i + 1;
 % DataName{i} = 'AwA'; i = i + 1;
